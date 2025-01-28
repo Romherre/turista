@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a Claro Argentina</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f3f3;
+    color: #4B4B4D;
+  }
+  h1, h2 {
+    color: #1d1b1b;
+    font-weight: 700;
+  }
+  .btn-claro {
+    background-color: #EE1C25;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  .btn-claro:hover {
+    background-color: #C4161D;
+    color: #fff;
+  }
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  .card-title {
+    color: #EE1C25;
+    font-weight: 700;
+  }
+  .accordion-button {
+    background-color: #EE1C25;
+    color: #fff;
+    font-weight: 700;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #C4161D;
+    color: #fff;
+  }
+  .accordion-body {
+    background-color: #fff;
+  } */
+
+        body {
+            font-family: 'Futura', sans-serif;
+            background-color: #ffffff;
+            color: #4B4B4D;
+        }
+
+        h1 {
+            font-family: 'poppins', sans-serif;
+            color: #338ff8;
+
+            font-weight: 700;
+            /* Cambia a negrita */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #272626;
+            font-weight: 700;
+        }
+
+        .btn-claro {
+            background-color: #EE1C25;
+            color: #fff;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        .btn-claro:hover {
+            background-color: #C4161D;
+            color: #fff;
+        }
+
+        .banner img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .pack-destacado {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .pack-destacado .card {
+            width: 100%;
+            max-width: 900px;
+            /* Ajuste al tamaño del banner */
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            /* Sombra suave */
+            border: none;
+        }
+
+        .pack-destacado .card-title {
+            color: #12a6e0;
+            font-weight: 700;
+        }
+
+        .pack-destacado .card-text {
+            font-size: 1.1rem;
+        }
+
+        .accordion-item {
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .accordion-button {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #4B4B4D;
+            font-weight: 700;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #f8f9fa;
+            color: #0a75a7;
+        }
+
+        .accordion-body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #4B4B4D;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .accordion-collapse {
+            transition: all 0.4s ease;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+
+        .card-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: #1892ca;
+            text-align: center;
+        }
+
+        .section {
+            padding: 50px 20px;
+            /* Espaciado superior e inferior */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <!-- Título Principal y Botones de Idioma -->
+        <h1 class="text-center mb-4" id="title">Bienvenidos a Claro Argentina</h1>
+        <div class="text-center mb-4">
+            <button class="btn btn-primary mx-1" onclick="cambiarIdioma('es')">Español</button>
+            <button class="btn btn-secondary mx-1" onclick="cambiarIdioma('en')">English</button>
+            <button class="btn btn-danger mx-1" onclick="cambiarIdioma('ru')">Русский</button>
+            <button class="btn btn-warning mx-1" onclick="cambiarIdioma('zh')">中文</button>
+            <button class="btn btn-success mx-1" onclick="cambiarIdioma('pt')">Português</button>
+        </div>
+        <div class="banner text-center">
+            <img src="./img/tigre.jpg" alt="Vivi Argentina" />
+        </div>
+
+        <!-- Descripción del Pack -->
+        <!-- <section class="pack-destacado mb-5">
+      <div class="p-4 text-center bg-light border rounded">
+        <h2 class="mb-3" id="packTitle">SIM Card + 25 GB de Datos Móviles por 30 Días</h2>
+        <p class="lead" id="packDescription">
+          La mejor opción para mantenerte conectado mientras exploras Argentina.
+        </p>
+      </div>
+    </section> -->
+
+        <section class="pack-destacado">
+            <div class="card p-4 text-center">
+                <h2 class="card-title" id="packTitle">SIM Card + 25 GB de datos móviles por 30 días</h2>
+                <p class="card-text" id="packDescription">
+                    La mejor opción para mantenerte conectado mientras exploras Argentina.
+                </p>
+            </div>
+        </section>
+
+        <!-- Información General -->
+        <section class="informacion-general mb-5">
+            <h2 class="mb-4 text-center" id="faqTitle">Información Importante</h2>
+            <div class="accordion" id="faqAccordion">
+                <!-- Requisitos -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <span id="requisitos"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p id="requisitosAceptados"></p>
+                            <ul id="aceptados"></ul>
+                            <p id="requisitosNoAceptados" class="text-danger"></p>
+                            <ul id="rechazados" class="text-danger"></ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Consulta SIM Física o eSIM -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span id="sim"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <span id="simInfo"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recargas -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <span id="recargas"></span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <span id="recargasInfo"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Correas Antirrobo -->
+        <section class="correas-antirrobo mb-5">
+            <h2 class="mb-4 text-center" id="proteccionTitle">Protege tus pertenencias mientras disfrutas de tu viaje
+            </h2>
+            <p class="lead text-center mb-5" id="proteccionDescription">
+                Nuestras correas antirrobo y láminas de protección están diseñadas para tu tranquilidad.
+            </p>
+            <div class="row g-4">
+                <!-- Correa Corta -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <img src="./img/strapcorta.jpeg" class="card-img-top" alt="Correa antirrobo corta">
+                        <div class="card-body">
+                            <h5 class="card-title" id="correaCortaTitulo">Correa Antirrobo Corta</h5>
+                            <p class="card-text" id="correaCortaTexto">
+                                Lleva tu celular seguro en el brazo mientras te mueves libremente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Correa de Cuello -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <img src="./img/larga.jpeg" class="card-img-top" alt="Correa antirrobo para el cuello">
+                        <div class="card-body">
+                            <h5 class="card-title" id="correaCuelloTitulo">Correa larga Antirrobo </h5>
+                            <p class="card-text" id="correaCuelloTexto">
+                                Ideal para mantener tu celular seguro y siempre a la vista.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Láminas de Protección -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <img src="./img/hidrogel.png" class="card-img-top" alt="Láminas de protección">
+                        <div class="card-body">
+                            <h5 class="card-title" id="laminaTitulo">Láminas de Protección</h5>
+                            <p class="card-text" id="laminaTexto">
+                                Protege la pantalla de tu dispositivo contra rayones y golpes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Cargadores -->
+        <section class="cargadores mb-5">
+            <h2 class="mb-4 text-center" id="argentinaSurprise">Deja que Argentina te sorprenda</h2>
+            <p class="lead text-center mb-5" id="productosSubtitle">
+                Mantén tus dispositivos listos para capturar cada momento.
+            </p>
+            <div class="row g-4">
+                <!-- Cargador -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <img src="./img/ringocargador.jpg" class="card-img-top" alt="Cargador">
+                        <div class="card-body">
+                            <h5 class="card-title" id="cargadorTitulo">Cargadores Compatibles</h5>
+                            <p class="card-text" id="cargadorTexto">Nunca te quedes sin energía mientras descansas o
+                                planeas tu próximo destino.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cargador de Auto -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <img src="./img/cargadorauto.png" class="card-img-top" alt="Cargador de auto">
+                        <div class="card-body">
+                            <h5 class="card-title" id="cargadorAutoTitulo">Cargadores de Auto</h5>
+                            <p class="card-text" id="cargadorAutoTexto">Perfectos para recorrer las rutas argentinas.
+                                Mantén tus dispositivos cargados mientras exploras cada rincón del país.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Power Bank -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow">
+                        <img src="./img/powerbank.jpg" class="card-img-top" alt="Power Bank">
+                        <div class="card-body">
+                            <h5 class="card-title" id="powerbankTitulo">Power Bank</h5>
+                            <p class="card-text" id="powerbankTexto">Llévalo contigo a cualquier lugar y mantente
+                                conectado, incluso en medio de la aventura.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="turista.js"></script>
+</body>
+
+</html>
