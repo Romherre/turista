@@ -53,13 +53,14 @@
 
         body {
             font-family: 'Futura', sans-serif;
-            background-color: #ffffff;
-            color: #4B4B4D;
+            background-color: #FFFFFF;
+            color: #757575;
+            font-size: 15px;
         }
 
         h1 {
             font-family: 'poppins', sans-serif;
-            color: #338ff8;
+            color: #4B4B4D;
 
             font-weight: 700;
             /* Cambia a negrita */
@@ -72,17 +73,43 @@
             font-weight: 700;
         }
 
-        .btn-claro {
+        /* .btn-claro {
             background-color: #EE1C25;
-            color: #fff;
+            color: #FFFFFF;
             border-radius: 5px;
+            padding: 10px 20px;
             text-transform: uppercase;
+            font-weight: 700;
+            border: none;
+            transition: all 0.3s ease;
         }
 
         .btn-claro:hover {
             background-color: #C4161D;
-            color: #fff;
-        }
+            transform: scale(1.05);
+            
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+        } */
+        .btn-trad {
+  background-color: #EE1C25; /* Rojo Claro */
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.70rem; /* Tamaño reducido */
+  /* font-weight: 600;  */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-trad:hover {
+  background-color: #C4161D; /* Rojo más oscuro */
+  transform: scale(1.05); /* Efecto de agrandamiento */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
 
         .banner img {
             width: 100%;
@@ -107,7 +134,7 @@
         }
 
         .pack-destacado .card-title {
-            color: #12a6e0;
+            color: #EE1C25;
             font-weight: 700;
         }
 
@@ -120,7 +147,7 @@
             margin-bottom: 20px;
         }
 
-        .accordion-button {
+        /* .accordion-button {
             font-family: 'Poppins', sans-serif;
             background-color: #ffffff;
             color: #4B4B4D;
@@ -132,20 +159,56 @@
 
         .accordion-button:not(.collapsed) {
             background-color: #f8f9fa;
-            color: #0a75a7;
+            color: #EE1C25;
         }
 
         .accordion-body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             background-color: #ffffff;
-            color: #4B4B4D;
+            color: #757575;
             padding: 20px;
             line-height: 1.6;
         }
 
         .accordion-collapse {
             transition: all 0.4s ease;
-        }
+        } */
+         /* Estilo unificado para el acordeón */
+.accordion-button {
+  font-family: 'Montserrat', sans-serif; /* Igual que las cards */
+  font-size: 1.2rem; /* Tamaño similar al de los títulos de las cards */
+  font-weight: 800; /* Negrita para destacar */
+  color: #EE1C25; /* Rojo Claro, igual que los títulos */
+  background-color: #FFFFFF; /* Fondo blanco */
+  border: 1px solid #E0E0E0; /* Bordes ligeros */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 15px; /* Espaciado interno */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #F8F9FA; /* Fondo gris claro al expandirse */
+  color: #C4161D; /* Rojo más oscuro */
+}
+
+.accordion-body {
+  font-family: 'Montserrat', sans-serif; /* Igual que el contenido de las cards */
+  font-size: 1rem; /* Tamaño estándar */
+  color: #414141; /* Texto secundario */
+  line-height: 1.6; /* Altura de línea para mejor lectura */
+  padding: 20px; /* Espaciado interno */
+}
+
+.accordion-collapse {
+  transition: all 0.4s ease; /* Animación de colapso suave */
+}
+
+/* Estilo adicional para hover en el botón del acordeón */
+.accordion-button:hover {
+  background-color: #FFF5F5; /* Fondo muy suave al pasar el mouse */
+  color: #C4161D; /* Rojo más oscuro */
+}
+
 
         img {
             border-radius: 10px;
@@ -160,14 +223,19 @@
         .card-title {
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
-            font-size: 1.4rem;
-            color: #1892ca;
+            font-size: 1.2rem;
+            color: #EE1C25;
             text-align: center;
         }
 
-        .section {
+        section {
             padding: 50px 20px;
             /* Espaciado superior e inferior */
+        }
+
+        .row {
+            margin-bottom: 40px;
+            /* Espaciado entre filas */
         }
     </style>
 </head>
@@ -177,12 +245,12 @@
         <!-- Título Principal y Botones de Idioma -->
         <h1 class="text-center mb-4" id="title">Bienvenidos a Claro Argentina</h1>
         <div class="text-center mb-4">
-            <button class="btn btn-primary mx-1" onclick="cambiarIdioma('es')">Español</button>
-            <button class="btn btn-secondary mx-1" onclick="cambiarIdioma('en')">English</button>
-            <button class="btn btn-danger mx-1" onclick="cambiarIdioma('ru')">Русский</button>
-            <button class="btn btn-warning mx-1" onclick="cambiarIdioma('zh')">中文</button>
-            <button class="btn btn-success mx-1" onclick="cambiarIdioma('pt')">Português</button>
-        </div>
+            <button class="btn btn-trad" onclick="cambiarIdioma('es')">Español</button>
+            <button class="btn btn-trad" onclick="cambiarIdioma('en')">English</button>
+            <button class="btn btn-trad" onclick="cambiarIdioma('pt')">Português</button>
+            <button class="btn btn-trad" onclick="cambiarIdioma('ru')">Русский</button>
+            <button class="btn btn-trad" onclick="cambiarIdioma('zh')">中文</button>
+          </div>
         <div class="banner text-center">
             <img src="./img/tigre.jpg" alt="Vivi Argentina" />
         </div>
