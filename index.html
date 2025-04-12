@@ -105,47 +105,31 @@
       .pack-destacado .card-text {
         font-size: 1.1rem;
       }
-
-      .accordion-item {
-        border: none;
-        margin-bottom: 20px;
-      }
-
-      .accordion-button {
+      .card-title {
         font-family: "futura", sans-serif;
         font-size: 1.2rem;
-        font-weight: 800;
-        color: #ee1c25;
-        background-color: #ffffff;
-        border: 1px solid #e0e0e0;
-        border-radius: 5px;
+        font-weight: bold;
+      }
+      
+      .card {
+        background-color: #fff;
+        border-left: 5px solid #ee1c25;
+        border-radius: 10px;
         padding: 15px;
         transition: all 0.3s ease;
       }
-
-      .accordion-button:not(.collapsed) {
-        background-color: #f8f9fa;
-        /* Fondo gris claro al expandirse */
-        color: #c4161d;
-        /* Rojo más oscuro */
+      
+      .card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
       }
-
-      .accordion-body {
-        font-family: "futura", sans-serif;
-        font-size: 1rem;
-        color: #414141;
-        line-height: 1.6;
-        padding: 20px;
+      
+      ul {
+        padding-left: 1rem;
+        margin-bottom: 0;
       }
+      
 
-      .accordion-collapse {
-        transition: all 0.4s ease;
-      }
-
-      .accordion-button:hover {
-        background-color: #fff5f5;
-        color: #c4161d;
-      }
 
       img {
         border-radius: 10px;
@@ -208,13 +192,28 @@
       }
 
       section {
-        padding: 40px 20px;
+        padding: 20px 20px;
         /* Espaciado superior e inferior */
       }
 
       .row {
         margin-bottom: 40px;
         /* Espaciado entre filas */
+      }
+      #wifiAsistencia {
+        font-size: 1.2rem;           /* Tamaño más grande */
+        font-weight: 700;            /* Más peso */
+        color:#414141;              /* Rojo Claro */
+        line-height: 1.6;
+        padding-top:30px;
+        padding-bottom:20px;
+      }
+      
+      #aventuraConectada {
+        font-size: 1.3rem;
+        color: #444;
+        font-style: italic;
+        margin-top: 15px;
       }
     </style>
   </head>
@@ -351,11 +350,11 @@
         </section> -->
 
       <!-- Información General -->
-      <section class="informacion-general mb-5">
+      <!--<section class="informacion-general mb-5">
         <h2 class="mb-4 text-center" id="faqTitle">Información Importante</h2>
-        <div class="accordion" id="faqAccordion">
+        <div class="accordion" id="faqAccordion">-->
           <!-- Requisitos -->
-          <div class="accordion-item">
+          <!--<div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button
                 class="accordion-button"
@@ -381,9 +380,9 @@
                 <ul id="rechazados" class="text-danger"></ul>
               </div>
             </div>
-          </div>
+          </div>-->
           <!-- Consulta SIM Física o eSIM -->
-          <div class="accordion-item">
+          <!--<div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button
                 class="accordion-button collapsed"
@@ -406,9 +405,9 @@
                 <span id="simInfo"></span>
               </div>
             </div>
-          </div>
+          </div>-->
           <!-- Recargas -->
-          <div class="accordion-item">
+          <!--<div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button
                 class="accordion-button collapsed"
@@ -433,8 +432,54 @@
             </div>
           </div>
         </div>
+        <div class="mt-4 text-center">
+          <p id="wifiAsistencia" class="fw-bold"></p>
+          <p id="aventuraConectada" class="mt-3"></p>
+        </div>
+      </section>-->
+      <section class="informacion-general mb-5">
+        <h2 class="mb-4 text-center" id="faqTitle">Información Importante</h2>
+      
+        <div class="row g-4">
+          <!-- Requisitos -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title text-danger" id="requisitos"></h5>
+                <p id="requisitosAceptados" class="fw-bold"></p>
+                <ul id="aceptados" class="mb-3"></ul>
+                <p id="requisitosNoAceptados" class="fw-bold text-danger"></p>
+                <ul id="rechazados" class="text-danger"></ul>
+              </div>
+            </div>
+          </div>
+      
+          <!-- SIM física o eSIM -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title text-danger" id="sim"></h5>
+                <p id="simInfo" class="mt-3"></p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Recargas -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title text-danger" id="recargas"></h5>
+                <p id="recargasInfo" class="mt-3"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="mt-5 text-center">
+          <p id="wifiAsistencia" class="fw-bold"></p>
+          <p id="aventuraConectada" class="mt-3"></p>
+        </div>
       </section>
-
       <!-- Sección de Correas Antirrobo -->
       <section class="correas-antirrobo mb-5">
         <h2 class="mb-4 text-center" id="proteccionTitle">
@@ -452,7 +497,7 @@
                 class="card-img-top"
                 alt="Correa antirrobo corta"
               />
-              <div class="price">$7,999.00</div>
+              <!--<div class="price">$7,999.00</div>-->
               <div class="card-body">
                 <h5 class="card-title" id="correaCortaTitulo">
                   Correa Antirrobo Corta
@@ -473,7 +518,7 @@
                 class="card-img-top"
                 alt="Correa antirrobo para el cuello"
               />
-              <div class="price">$9,999.00</div>
+              <!--<div class="price">$9,999.00</div>-->
               <div class="card-body">
                 <h5 class="card-title" id="correaCuelloTitulo">
                   Correa larga Antirrobo
@@ -492,7 +537,7 @@
                 class="card-img-top"
                 alt="Láminas de protección"
               />
-              <div class="price">$8,299.00 C/u</div>
+              <!--<div class="price">$8,299.00 C/u</div>-->
               <!-- Precio en el centro de la imagen -->
               <div class="card-body">
                 <h5 class="card-title" id="laminaTitulo">
@@ -524,7 +569,7 @@
                 class="card-img-top"
                 alt="Cargador"
               />
-              <div class="price">$22,999.00</div>
+              <!--<div class="price">$22,999.00</div>-->
               <div class="card-body">
                 <h5 class="card-title" id="cargadorTitulo">
                   Cargadores Compatibles
@@ -544,7 +589,7 @@
                 class="card-img-top"
                 alt="Cargador de auto"
               />
-              <div class="price">AGOTADO</div>
+              <!--<div class="price">AGOTADO</div>-->
               <div class="card-body">
                 <h5 class="card-title" id="cargadorAutoTitulo">
                   Cargadores de Auto
@@ -564,7 +609,7 @@
                 class="card-img-top"
                 alt="Power Bank"
               />
-              <div class="price">$89,999.00</div>
+              <!--<div class="price">$89,999.00</div>-->
               <div class="card-body">
                 <h5 class="card-title" id="powerbankTitulo">Power Bank</h5>
                 <p class="card-text" id="powerbankTexto">

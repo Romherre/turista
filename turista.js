@@ -12,7 +12,13 @@ const translations = {
     recargas: "¿Cómo hago recargas y consulto los consumos?",
     recargasInfo: "Ingresando a la web: <a href='https://miclaro.claro.com.ar/' target='_blank'>https://miclaro.claro.com.ar/</a>",
     sim: "¿Necesita SIM card física o eSIM?",
-    simInfo: "El precio es el mismo $17.500 para ambas opciones.",
+    simInfo: "El precio es el mismo $18.200 para ambas opciones.",
+    wifiAsistencia: `Para una mejor comunicación con el asesor, conectate a una red WiFi.<br>
+Podés elegir cualquiera de las que tienen el nombre "Box..." y usar la contraseña: 12345678.<br>
+Luego, indicá tu correo electrónico y desbloqueá tu celular para que el asesor pueda ayudarte a activar tu SIM card o eSIM.`,
+
+aventuraConectada: `Tu aventura empieza conectándote.<br>
+Con nuestros productos y asesoría, tu estadía en Argentina será más cómoda, segura y conectada desde el primer momento.`,
     proteccionTitle: "Protege tus pertenencias mientras disfrutas de tu viaje",
     proteccionDescription: "Nuestras correas antirrobo y láminas de protección están diseñadas para tu tranquilidad.",
     argentinaSurprise: "Deja que Argentina te sorprenda",
@@ -43,7 +49,14 @@ const translations = {
     recargas: "How do I recharge and check usage?",
     recargasInfo: "Visit: <a href='https://miclaro.claro.com.ar/' target='_blank'>https://miclaro.claro.com.ar/</a>",
     sim: "Do you need a physical SIM card or eSIM?",
-    simInfo: "The price is the same $17,500 for both options.",
+    simInfo: "The price is the same: ARS $18,200 for both options",
+    wifiAsistencia: `For better communication with the advisor, connect to a WiFi network.<br>
+You can choose any of those named "Box..." and use the password: 12345678.<br>
+Then, provide your email address and unlock your phone so the advisor can help you activate your SIM card or eSIM.`,
+
+aventuraConectada: `Your adventure starts by getting connected.<br>
+With our products and guidance, your stay in Argentina will be more comfortable, safe, and connected from the very first moment.`,
+
     proteccionTitle: "Protect your belongings while enjoying your trip",
     proteccionDescription: "Our anti-theft straps and protective films are designed for your peace of mind.",
     argentinaSurprise: "Let Argentina surprise you",
@@ -74,7 +87,14 @@ const translations = {
     recargas: "Como faço recargas e consulto os consumos?",
     recargasInfo: "Acesse o site: <a href='https://miclaro.claro.com.ar/' target='_blank'>https://miclaro.claro.com.ar/</a>",
     sim: "Você precisa de um SIM card físico ou eSIM?",
-    simInfo: "O preço é o mesmo: R$17.500 para ambas as opções.",
+    simInfo: "O preço é o mesmo: ARS $18.200 para ambas as opções.",
+    wifiAsistencia: `Para uma melhor comunicação com o assessor, conecte-se a uma rede WiFi.<br>
+Você pode escolher qualquer uma chamada "Box..." e usar a senha: 12345678.<br>
+Depois, informe seu e-mail e desbloqueie seu celular para que o assessor possa ajudá-lo a ativar seu chip ou eSIM.`,
+
+aventuraConectada: `Sua aventura começa ao se conectar.<br>
+Com nossos produtos e orientação, sua estadia na Argentina será mais confortável, segura e conectada desde o primeiro momento.`,
+
     proteccionTitle: "Proteja seus pertences enquanto aproveita sua viagem",
     proteccionDescription: "Nossas alças antifurto e películas protetoras foram projetadas para sua tranquilidade.",
     argentinaSurprise: "Deixe a Argentina te surpreender",
@@ -105,7 +125,14 @@ const translations = {
     recargas: "Как пополнить счет и проверить использование?",
     recargasInfo: "Перейдите на сайт: <a href='https://miclaro.claro.com.ar/' target='_blank'>https://miclaro.claro.com.ar/</a>",
     sim: "Нужна физическая SIM-карта или eSIM?",
-    simInfo: "Цена одинакова: 17 500 песо для обоих вариантов.",
+    simInfo: "Цена одинаковая: 18 200 аргентинских песо за оба варианта.",
+    wifiAsistencia: `Для лучшего общения с консультантом подключитесь к сети WiFi.<br>
+Вы можете выбрать любую с названием "Box..." и использовать пароль: 12345678.<br>
+Затем укажите свой адрес электронной почты и разблокируйте телефон, чтобы консультант мог помочь вам активировать SIM-карту или eSIM.`,
+
+aventuraConectada: `Ваше приключение начинается с подключения.<br>
+С нашими продуктами и поддержкой ваше пребывание в Аргентине будет более комфортным, безопасным и подключенным с самого начала.`,
+
     proteccionTitle: "Защитите свои вещи во время путешествия",
     proteccionDescription: "Наши ремни против кражи и защитные пленки созданы для вашего спокойствия.",
     argentinaSurprise: "Пусть Аргентина вас удивит",
@@ -136,7 +163,14 @@ const translations = {
     recargas: "如何充值和查询使用情况？",
     recargasInfo: "访问网站: <a href='https://miclaro.claro.com.ar/' target='_blank'>https://miclaro.claro.com.ar/</a>",
     sim: "您需要实体 SIM 卡还是 eSIM？",
-    simInfo: "两种选项的价格相同，为 17,500 比索。",
+    simInfo: "两个选项的价格相同，都是18,200阿根廷比索",
+    wifiAsistencia: `为便于与顾问沟通，请连接到 WiFi 网络。<br>
+您可以选择名称为 “Box...” 的任意网络，并使用密码：12345678。<br>
+然后，请提供您的电子邮箱并解锁手机，以便顾问协助您激活 SIM 卡或 eSIM。`,
+
+aventuraConectada: `连接就是冒险的开始。<br>
+借助我们的产品和协助，您在阿根廷的旅程将更加舒适、安全，并从一开始就保持连线状态。`,
+
     proteccionTitle: "旅行时保护好您的物品",
     proteccionDescription: "我们的防盗带和保护膜让您安心无忧。",
     argentinaSurprise: "让阿根廷带给您惊喜",
@@ -156,54 +190,6 @@ const translations = {
   },
 };
 
-// Función para cambiar idioma
-// function cambiarIdioma(lang) {
-//   const t = translations[lang] || translations["es"];
-//   for (const key in t) {
-//     const element = document.getElementById(key);
-//     if (element) {
-//       if (key === "aceptados" || key === "rechazados" || t[key].includes("<a")) {
-//         element.innerHTML = t[key];
-//       } else {
-//         element.textContent = t[key];
-//       }
-//     }
-//   }
-// }
-
-// Idioma predeterminado
-// document.addEventListener("DOMContentLoaded", () => cambiarIdioma("es"));
-// document.getElementById("title").innerHTML = t.title;
-//   document.getElementById("bannerTitle").innerHTML = t.bannerTitle;
-//   document.getElementById("bannerDescription").innerHTML = t.bannerDescription;
-//   document.getElementById("faqTitle").innerHTML = t.faqTitle;
-//   document.getElementById("requisitos").innerHTML = t.requisitos;
-//   document.getElementById("requisitosAceptados").innerHTML = t.requisitosAceptados;
-//   document.getElementById("requisitosNoAceptados").innerHTML = t.requisitosNoAceptados;
-//   document.getElementById("aceptados").innerHTML = t.aceptados;
-//   document.getElementById("rechazados").innerHTML = t.rechazados;
-//   document.getElementById("recargas").innerHTML = t.recargas;
-//   document.getElementById("recargasInfo").innerHTML = t.recargasInfo;
-//   document.getElementById("sim").innerHTML = t.sim;
-//   document.getElementById("simInfo").innerHTML = t.simInfo;
-//   document.getElementById("proteccionTitle").innerHTML = t.proteccionTitle;
-//   document.getElementById("proteccionDescription").innerHTML = t.proteccionDescription;
-//   document.getElementById("argentinaSurprise").innerHTML = t.argentinaSurprise;
-//   document.getElementById("productosSubtitle").innerHTML = t.productosSubtitle;
-// }
-// const bannerTitles = document.querySelectorAll(".banner-title");
-//   const bannerDescriptions = document.querySelectorAll(".banner-description");
-
-//   bannerTitles.forEach((title) => {
-//     title.innerHTML = t.bannerTitle;
-//   });
-
-//   bannerDescriptions.forEach((description) => {
-//     description.innerHTML = t.bannerDescription;
-//   });
-// Idioma predeterminado
-// document.addEventListener("DOMContentLoaded", () => cambiarIdioma("es"));
-
 
 function cambiarIdioma(lang) {
   const t = translations[lang] || translations["es"];
@@ -220,6 +206,8 @@ function cambiarIdioma(lang) {
   document.getElementById("recargasInfo").innerHTML = t.recargasInfo;
   document.getElementById("sim").innerHTML = t.sim;
   document.getElementById("simInfo").innerHTML = t.simInfo;
+  document.getElementById("wifiAsistencia").innerHTML = t.wifiAsistencia;
+  document.getElementById("aventuraConectada").innerHTML = t.aventuraConectada;
   document.getElementById("proteccionTitle").innerHTML = t.proteccionTitle;
   document.getElementById("proteccionDescription").innerHTML = t.proteccionDescription;
   document.getElementById("argentinaSurprise").innerHTML = t.argentinaSurprise;
